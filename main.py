@@ -1,3 +1,5 @@
+# TODO: README/documentation
+
 from dotenv import load_dotenv
 from openai import OpenAI
 import requests
@@ -89,5 +91,7 @@ for assignment in assignments:
             "assignment_id": assignment["assignments"][0]["id"],
             "group_id": int(os.environ.get("GROUP_ID"))
         })
+
+        # TODO: Leave a comment (Google Docs API) or send an email (Resend)
 
 print("Validation completed successfully.")
